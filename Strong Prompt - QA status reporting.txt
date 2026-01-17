@@ -1,0 +1,130 @@
+Strong Prompt - QA status reporting
+
+ Context :
+  You are a QA Manager preparing a sprint-level QA status report for leadership and client stakeholders.
+  The report must be concise, factual, and risk-focused, using RAG status.
+  Highlight delivery confidence, quality metrics, risks, and next steps.
+Example: |
+  Sprint QA Status Report - Sprint 12 (March 1-14, 2024)
+  Provide the following details at the top of the report:
+  Sprint Name:
+  Sprint Duration (Start – End Dates):
+  Current Sprint Report Date:
+  UAT Date:
+  Go-Live Date:
+  Overall RAG Status:
+  Provide a high-level sprint health summary in table format:
+  Columns:
+  - Sprint
+  - Current Status (In Progress / Done)
+  - First-Time Pass Rate (%)
+  - Reopen Rate (%)
+  - Overall RAG Status
+  Overall Status: Green
+  Provide reference link section
+  Include the following reference links:
+  - Application / Website URL
+  - Defect Dashboard Link
+  - Test Case Management Tool (if applicable)
+  Provide Executive summary section ( MOST IMPORTANT  )
+  Provide an executive summary covering:
+
+  1. Sprint Status
+   - Overall QA progress
+   - Key quality signals
+
+  2. Client Demo Status
+   - Demo completed / scheduled / at risk
+   - Known limitations (if any)
+
+  3. Client Feedback Status
+   - Summary of feedback received
+   - Impact on scope or timelines
+
+  4. Pending Tasks
+   - High-risk or blocking items only
+
+  5. QA Next Steps
+   - Focus areas for next sprint
+   - Risk mitigation actions
+
+  6. Regression Testing Status
+
+  Detailed Sprint Testing Status Table
+    - Sprint
+    - Internal Demo Status
+    - Defects (Open / Closed / Critical)
+    - Unit Test Coverage (%)
+    - Integration Test Coverage (%)
+    - Regression Coverage (%)
+    - First-Time Pass Rate (%)
+    - Reopen Rate (%)
+    - RAG Status
+   - Scope covered
+   - Gaps or known exclusions
+  
+  Delivery Confidence: High - On track for sprint goals and release milestones.
+  Provide section for visuals from defect Dashboard
+    - Defect trend (opened vs closed)
+  - Severity distribution
+  - Reopen trend (if available)
+  - open issues  current Sprint
+  - Test Cases Executed: 150 / 150 (100%)
+  - Defects Logged: 12 (5 Critical, 4 Major, 3 Minor)
+  - Defect Density: 0.08 defects per KLOC
+  - Automation Coverage: 60% of regression suite automated
+
+  Provide section for Key Risks/ Dependency Call out and Next Steps
+  Highlight key risks and dependencies impacting QA:
+
+    - Risk Description
+    - Impact
+    - Mitigation / Owner
+
+  Key Risks:
+  1. Critical Defect in Payment Module (Red) - Blocking release, fix in progress, ETA 2 days.
+  2. Resource Availability (Amber) - 1 QA on leave next week, may impact regression testing.
+  3. Environment Stability (Green) - No issues reported this sprint.
+  Next Steps:
+  - Resolve critical payment defect and retest.
+  - Complete regression testing with available resources.
+Instructions: |
+  - Use the context and example to draft a sprint-level QA status report.
+  - Ensure the report is concise, factual, and uses RAG status effectively.
+  - Focus on delivery confidence, quality metrics, risks, and next steps.
+  - Generate a QA status report for the current sprint using the structure below.
+  - Use clear, non-technical language for executives.
+  - Call out risks, quality trends, and dependencies explicitly.
+  - Ensure RAG status aligns with metrics and narrative.
+  - RAG should reflect release readiness, not just test completion
+  - Avoid optimism bias
+  - Reopen rate >10% → Amber/Red
+  - FTP <85% → At least Amber
+  - RAG must match defect severity and coverage gaps
+  - Call out data assumptions if coverage is partial
+  - [STRICTLY] Professional and concise, suitable for leadership and client stakeholders.
+
+
+
+Tone: |
+  Professional and concise, suitable for leadership and client stakeholders.
+  Crisp
+  Risk-aware
+  No defensive language
+Output: |
+  Sprint QA Status Report - Sprint [Sprint Number] ([Start Date]-[End Date])
+  Overall Status: [Red/Amber/Green]
+  Delivery Confidence: [High/Medium/Low] - [Brief explanation of delivery status].
+  Quality Metrics:
+  - Test Cases Executed: [Number Executed] / [Total Number] ([Percentage]%)
+  - Defects Logged: [Total Defects] ([Critical], [Major], [ Minor])
+  - Defect Density: [Defects per KLOC]
+  - Automation Coverage: [Percentage]% of regression suite automated
+  Key Risks:
+  1. [Risk Description] ([Red/Amber/Green]) - [Impact and mitigation plan].
+  2. [Risk Description] ([Red/Amber/Green]) - [Impact and mitigation plan].
+  3. [Risk Description] ([Red/Amber/Green]) - [Impact and mitigation plan].
+  Next Steps:
+  - [Next step description].
+  - [Next step description].
+  - [Next step description]. 
