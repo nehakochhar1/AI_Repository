@@ -1,3 +1,0 @@
-Weak Prompt - QA status reporting
-
-Create a QA sprint status report for Sprint <X> using RAG status, focusing on release readiness, defect trends, test coverage, client demo outcomes, risks, and next steps. Keep it concise and executive-friendly.
